@@ -46,7 +46,7 @@ int main(int argc, char *argv[]) {
                 case 'y':
                 case 'Y':
                     // And only sometimes 'Y'.
-                    printf("%c is a tough one, I need to hear the sound.\n", j);
+                    printf("%d: %c is a tough one, I need to hear the sound.\n", j, letter);
                     break;
 
                 default:
