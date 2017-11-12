@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv
+    /* Just playing around with command line arguments. */
     if (argc == 1){
         printf("You only have one argument. Try some more.\n");
     } else if (argc > 1 && argc < 8){
         printf("Here's your arguments:\n");
+
         for(int i=0; i < argc; i++){
             printf("%s ", argv[i]);
         }
