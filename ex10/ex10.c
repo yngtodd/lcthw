@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    /* An expensive way to find vowels in command line arguments,
-     * as in O(n^2).
-     */
+    /* An expensive [O(n^2)] way to find vowels in command line arguments. */
 
     if(argc < 2) {
         printf("ERROR: You need at least one argument beyond your program name.\n");
