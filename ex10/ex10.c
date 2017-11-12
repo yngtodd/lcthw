@@ -1,18 +1,23 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
+    /* An expensive way to find vowels in command line arguments,
+     * as in O(n^2).
+     */
+
     if(argc < 2) {
         printf("ERROR: You need at least one argument beyond your program name.\n");
         return 1;
     }
 
-    // Zeroth argument is the name of the program.
     for(int i=0; i < argc; i++) {
         if (i == 0) {
+            // Zeroth argument is the name of the program.
             printf("\nLet's check for vowels in your argument(s)!\n");
+            printf("\nProgram name:\n");
+        } else {
+            printf("\nArgument %d:\n", i);
         }
-
-        printf("\nArgument %d:\n", i);
 
         for (int j=0; argv[i][j] != '\0'; j++) {
             char letter = argv[i][j];
