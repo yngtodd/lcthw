@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
 
     int len_nums = sizeof(nums) / sizeof(int);
     for(int i=0; i<len_nums; i++) {
-        printf("\nnums[] lives at %p\n", &nums);
+        printf("\nums[] lives at %p\n", &nums);
         printf("*cur_num lives at %p\n", &*cur_num);
 
         printf("\nPointer *cur_num is pointing to %d\n", cur_num[i]);
