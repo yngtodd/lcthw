@@ -6,6 +6,7 @@ ___
 ```c
 #include <stdio.h>
 #include <assert.h>
+#include <string.h>
 
 // Keeps related information bundled together.
 struct Game {
