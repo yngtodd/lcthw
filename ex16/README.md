@@ -1,15 +1,25 @@
 ### Structs and Pointers to them
+Structuring related bits of memory to keep ourselves sorted (sort of).
 ___
 
-Structuring related bits of memory to keep ourselves sorted (sort of).
-
-The Game struct:
+#### The Game struct:
 ```c
-// Keep related information bundled together.
+// Keeps related information bundled together.
 struct Game {
     char *name;
     char *type;
     int year_created;
     int rating;
+}
+
+struct Game *Game_create(char *name, char *type, int year_created, int rating) {
+    struct Game *what = malloc(sizeof(struct Game));
+
+    what->name = strdup(name);
+    what->type = strdup(type);
+    what->year_created = year_created;
+    what->rating = rating;
+
+    return what;
 }
 ```
