@@ -17,7 +17,6 @@ void err_msg(const char *message) {
 // case for a function pointer
 typedef int (*compare_cb)(int a, int b);
 
-
 int *bubble_sort(int *numbers, int count, compare_cb cmp) {
     /*
      * A classic bubble sort function that uses the
